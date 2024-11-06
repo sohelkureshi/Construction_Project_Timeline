@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Project Timeline</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="congrats.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Construction Project Timeline</h1>
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progress-bar"></div>
+            <span id="progress-percentage">0%</span>
+        </div>
+        <div class="timeline">
+            <div class="timeline-event">
+                <div class="timeline-content">
+                    <h2><b>1.</b> Project Initiation</h2>
+                    <p>Jan 2024</p>
+                    <p>Project kickoff and initial planning.</p>
+                    <button class="progress-button" id="initiation" onclick="markAsDone(0)">Mark as Done</button>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-content">
+                    <h2><b>2.</b> Design Phase</h2>
+                    <p>Feb 2024 - Mar 2024</p>
+                    <p>Architectural and engineering design.</p>
+                    <button class="progress-button" id="design" onclick="markAsDone(1)">Mark as Done</button>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-content">
+                    <h2><b>3.</b> Permitting</h2>
+                    <p>Apr 2024</p>
+                    <p>Obtaining necessary permits and approvals.</p>
+                    <button class="progress-button" id="permitting" onclick="markAsDone(2)">Mark as Done</button>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-content">
+                    <h2><b>4.</b> Construction</h2>
+                    <p>May 2024 - Dec 2024</p>
+                    <p>Actual construction work.</p>
+                    <button class="progress-button" id="construction" onclick="markAsDone(3)">Mark as Done</button>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-content">
+                    <h2><b>5.</b> Final Inspection</h2>
+                    <p>Jan 2025</p>
+                    <p>Final inspections and approvals.</p>
+                    <button class="progress-button" id="inspection" onclick="markAsDone(4)">Mark as Done</button>
+                </div>
+            </div>
+        </div>
+        <div id="congratulations-message" class="hidden">
+            <h2>Congratulations!</h2>
+            <p>You have successfully completed all the activities in the construction project timeline.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
